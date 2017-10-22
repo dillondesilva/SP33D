@@ -1,28 +1,17 @@
 /// @description Player Movement and Collisions
 // You can write your code in this editor
 space = keyboard_check_pressed(vk_space);
-if (jump_height != 3) {
-	yy = spd *(space * -1);
-	y += yy;
-	if (space) {
-		jump_height += 1;	
-	}
-} else {
-	if (y < 80) {
-		jump_limit -= 1;
-	} else {
-		vspeed = 10;
-		gravity = 1;
-	}
-}
+yy = spd *(space * -1);
+y += yy;
 
 
 // Collisions with Ground
 if (yy < 0) {
-	if (jump_height != 3) {
+	if (space && jump_height != 2) {
 		vspeed = -10;
 		gravity = 0.5;
 		sprite_index = spr_player_jump;
+		jump_height += 1;
 	}
 	
 	var c1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
