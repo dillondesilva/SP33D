@@ -8,16 +8,23 @@ if (jump_height != 3) {
 		jump_height += 1;	
 	}
 } else {
-	vspeed = 12;
-	gravity = 2;
+	if (y < 80) {
+		jump_limit -= 1;
+	} else {
+		vspeed = 10;
+		gravity = 1;
+	}
 }
+
 
 // Collisions with Ground
 if (yy < 0) {
 	if (jump_height != 3) {
 		vspeed = -10;
 		gravity = 0.5;
+		sprite_index = spr_player_jump;
 	}
+	
 	var c1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
 	var c2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
 	if (c1 != 0 || c2 != 0) {
