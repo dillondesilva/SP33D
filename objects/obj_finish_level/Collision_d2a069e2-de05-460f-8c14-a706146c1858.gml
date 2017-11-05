@@ -1,4 +1,3 @@
-/// @description Insert description here
+/// @description Level Complete
 // You can write your code in this editor
-show_message("You Won!!!");
-game_end();
+flag_hit = true;

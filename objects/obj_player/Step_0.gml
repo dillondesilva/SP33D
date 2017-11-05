@@ -1,5 +1,6 @@
 /// @description Player Movement and Collisions
-// You can write your code in this editor
+
+// Jumping
 space = keyboard_check_pressed(vk_space);
 yy = spd *(space * -1);
 y += yy;
@@ -7,6 +8,7 @@ y += yy;
 
 // Collisions with Ground
 if (yy < 0) {
+	// Checking if a legitamate jump can be made
 	if (space && jump_height != 2) {
 		vspeed = -10;
 		gravity = 0.5;
@@ -14,6 +16,7 @@ if (yy < 0) {
 		jump_height += 1;
 	}
 	
+	// The code actually checking for the collision with the grass
 	var c1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
 	var c2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
 	if (c1 != 0 || c2 != 0) {

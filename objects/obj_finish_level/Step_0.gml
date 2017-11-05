@@ -1,3 +1,3 @@
-/// @description Insert description here
+/// @description Code for Each Frame
 // You can write your code in this editor
-speed = -5;
+speed = -8;

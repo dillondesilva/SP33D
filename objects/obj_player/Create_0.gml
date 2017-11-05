@@ -1,5 +1,5 @@
 /// @description Setting Up Player
-// You can write your code in this editor
+// Variable set up
 image_xscale = -1
 spd = 10;
 xx = 0;
