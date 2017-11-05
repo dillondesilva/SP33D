@@ -4,6 +4,7 @@ image_xscale = -1
 spd = 10;
 xx = 0;
 yy = 0;
+hit_flag = false;
 
 jump_height = 0;
 
