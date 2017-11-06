@@ -5,5 +5,11 @@
 if (hit_flag != true) {
 	draw_self();
 } else {
-	draw_button(260, 220, 560, 120, !mouse_check_button(mb_left));
+	draw_set_colour(c_yellow);
+	draw_button(410, 250, 600, 300, !mouse_check_button(mb_left));
+	draw_set_colour(c_black);
+	createStatusText("Next Level", 433, 260, 1.5);
+	if (mouse_check_button(mb_left)) {
+		room_goto_next();
+	}
 }

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Draw Event
 // You can write your code in this editor
 // Setting our Draw Tools
 draw_set_color(c_yellow);
@@ -7,5 +7,5 @@ draw_set_color(c_yellow);
 if (flag_hit != true) {
 	draw_self();
 } else {
-	draw_text_ext_transformed(380, 199, "Level Complete", 3, 210, 2, 2, image_angle);
+	createStatusText("Level Complete", 345, 190, 2.5);
 }

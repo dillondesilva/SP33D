@@ -12,6 +12,9 @@ jump_height = 0;
 var layr = layer_get_id("Grass");
 tilemap = layer_tilemap_get_id(layr);
 
+// Set game over variable
+global.game_over = false;
+
 // Bbox Info
 sprMask = spr_player_right;
 spr_bbox_top = sprite_get_bbox_top(sprMask) - sprite_get_yoffset(sprMask);

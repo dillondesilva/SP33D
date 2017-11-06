@@ -38,3 +38,10 @@ if (yy < 0) {
 		jump_height = 0;
 	}
 } 
+
+// Code to destroy
+if (global.game_over) {
+	with(other) {
+		instance_destroy();
+	}
+}
