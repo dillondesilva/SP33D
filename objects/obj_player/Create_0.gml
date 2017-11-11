@@ -15,6 +15,9 @@ tilemap = layer_tilemap_get_id(layr);
 // Set game over variable
 global.game_over = false;
 
+// Boolean for in we're in Endless Runner Mode
+global.endless_runner = false;
+
 // Bbox Info
 sprMask = spr_player_right;
 spr_bbox_top = sprite_get_bbox_top(sprMask) - sprite_get_yoffset(sprMask);

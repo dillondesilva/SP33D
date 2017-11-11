@@ -39,9 +39,8 @@ if (yy < 0) {
 	}
 } 
 
-// Code to destroy
+// Code to stop game on game over
 if (global.game_over) {
-	with(other) {
-		instance_destroy();
-	}
+	speed = 0;
+	image_speed = 0;
 }

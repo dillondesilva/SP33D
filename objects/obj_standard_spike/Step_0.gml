@@ -2,9 +2,8 @@
 // You can write your code in this editor
 speed = -8;
 
-// Code to destroy
+// Code to stop game on game over
 if (global.game_over) {
-	with(other) {
-		instance_destroy();
-	}
+	speed = 0;
+	image_speed = 0;
 }

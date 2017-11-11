@@ -6,5 +6,5 @@
 if (global.game_over != true) {
 	draw_self();
 } else {
-	createStatusText("Game Over", 345, 190, 2.5);
+	createStatusText("Game Over", 400, 190, 2.5);
 }

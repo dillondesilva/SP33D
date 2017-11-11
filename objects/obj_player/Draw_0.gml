@@ -13,3 +13,13 @@ if (hit_flag != true) {
 		room_goto_next();
 	}
 }
+
+if (global.game_over == true) {
+	draw_set_colour(c_yellow);
+	draw_button(410, 250, 600, 300, !mouse_check_button(mb_left));
+	draw_set_colour(c_black);
+	createStatusText("Try Again", 433, 260, 1.5);
+	if (mouse_check_button(mb_left)) {
+		room_restart();
+	}
+}
