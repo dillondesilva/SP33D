@@ -3,4 +3,4 @@ x = argument0;
 y = argument1;
 object = argument2;
 
-instance_create_layer(x, y, "Instances_1", object);
+instance_create_depth(x, y, "Obstacles", object);

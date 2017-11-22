@@ -6,4 +6,4 @@ speed = -8;
 if (global.game_over) {
 	speed = 0;
 	image_speed = 0;
-}
+} 
