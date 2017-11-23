@@ -381,6 +381,25 @@
             }
         },
         {
+            "Key": "8317d2d5-92df-4aa0-ac31-574be3b1d6d0",
+            "Value": {
+                "id": "fe773b6a-ea57-4708-ac0c-3875da753af6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tls_top_grass\/tls_top_grass.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "8e093d4b-f0f1-4860-ab9f-4b51df742256",
             "Value": {
                 "id": "68472c30-0cab-497c-a726-56135f4037a6",
@@ -739,6 +758,25 @@
                 ],
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fe00a516-a0d1-415a-8da7-e95f8d69ea5f",
+            "Value": {
+                "id": "3064d9a3-0c73-4492-98f3-08f9756ca863",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_top_grass\/spr_top_grass.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
