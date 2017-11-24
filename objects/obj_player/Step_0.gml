@@ -1,5 +1,4 @@
 /// @description Player Movement and Collisions
-
 // Jumping
 space = keyboard_check_pressed(vk_space);
 yy = spd *(space * -1);
@@ -43,4 +42,5 @@ if (yy < 0) {
 if (global.game_over) {
 	speed = 0;
 	image_speed = 0;
+	instance_destroy();
 }

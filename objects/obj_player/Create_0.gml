@@ -4,7 +4,7 @@ image_xscale = -1
 spd = 10;
 xx = 0;
 yy = 0;
-hit_flag = false;
+global.hit_flag = false;
 
 jump_height = 0;
 
@@ -14,6 +14,9 @@ tilemap = layer_tilemap_get_id(layr);
 
 // Set game over variable
 global.game_over = false;
+
+// Set our score variable
+score = 0;
 
 // Bbox Info
 sprMask = spr_player_right;
